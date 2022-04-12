@@ -1,0 +1,79 @@
+<style>
+   #div {
+    border: 1px dotted #000;
+    position: absolute;
+}
+#canvas {
+    border: 1px solid red;
+}
+</style>
+
+<div id="div" hidden></div>
+<h2>Drag to make a selection</h2>
+<canvas id="canvas" width="800" height="600"></canvas>
+
+
+    <!-- var div = document.getElementById('div'), x1 = 0, y1 = 0, x2 = 0, y2 = 0;
+function reCalc() { //This will restyle the div
+    var x3 = Math.min(x1,x2); //Smaller X
+    var x4 = Math.max(x1,x2); //Larger X
+    var y3 = Math.min(y1,y2); //Smaller Y
+    var y4 = Math.max(y1,y2); //Larger Y
+    div.style.left = x3 + 'px';
+    div.style.top = y3 + 'px';
+    div.style.width = x4 - x3 + 'px';
+    div.style.height = y4 - y3 + 'px';
+    
+}
+onmousedown = function(e) {
+    div.hidden = 0; //Unhide the div
+    x1 = e.clientX; //Set the initial X
+    y1 = e.clientY; //Set the initial Y
+    reCalc();
+    console.log("x1,y1"+x1,y1)
+};
+onmousemove = function(e) {
+    x2 = e.clientX; //Update the current position X
+    y2 = e.clientY; //Update the current position Y
+    reCalc();
+    console.log( "x2,y2"+x2,y2)
+};
+onmouseup = function(e) {
+    div.hidden = 1; //Hide the div
+}; -->
+
+
+    <!-- // var stage = new createjs.Stage("canvas");
+    // createjs.Ticker.on("tick", tick);
+
+    // var selection = new createjs.Shape(),
+    //     g = selection.graphics.setStrokeStyle(1).beginStroke("#000").beginFill("rgba(0,0,0,0.05)"),
+    //     sd = g.setStrokeDash([10,5], 0).command,
+    //     r = g.drawRect(0,0,100,100).command,
+    //     moveListener;
+        
+
+    // stage.on("stagemousedown", dragStart);
+    // stage.on("stagemouseup", dragEnd);
+
+    // function dragStart(event) {
+    //     stage.addChild(selection).set({x:event.stageX, y:event.stageY});
+    //     r.w = 0; r.h = 0;
+    //     moveListener = stage.on("stagemousemove", drag);
+    // };
+
+    // function drag(event) {
+    //     r.w = event.stageX - selection.x;
+    //     r.h = event.stageY - selection.y; 
+    // }
+
+    // function dragEnd(event) {
+    //     stage.off("stagemousemove", moveListener);
+    // }
+
+    // function tick(event) {
+    //     stage.update(event);
+    //     sd.offset--;
+    // } -->
+    <script src="http://code.createjs.com/createjs-2013.12.12.min.js"></script>
+    <script src="demo.js"></script>

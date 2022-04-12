@@ -1,0 +1,7 @@
+uploads
+node_modules
+._*
+.DS_Store
+*.mjpeg
+*.mp4
+*.m4a
